@@ -1889,3 +1889,849 @@ WARNING: Unmatched cancel notification for request id 408
 2020.10.29 12:50:42 INFO  time: compiled scalaproject3 in 0.53s
 No more data in the client stdin, exiting...
 No more data in the client stdin, exiting...
+2020.10.29 17:12:28 INFO  started: Metals version 0.9.4 in workspace '/home/pascal/code/masters/bigdata/scalaProject3' .
+2020.10.29 17:12:29 INFO  time: initialize in 0.92s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher859538667937674611/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.29 17:12:30 INFO  skipping build import with status 'Installed'
+Waiting for the bsp connection to come up...
+Waiting for the bsp connection to come up...
+2020.10.29 17:12:32 INFO  no build target: using presentation compiler with only scala-library
+2020.10.29 17:12:32 WARN  no build target for: /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala
+No server running at 127.0.0.1:8212, let's fire one...
+Resolving ch.epfl.scala:bloop-frontend_2.12:1.4.4-13-408f4d80...
+Starting bloop server at 127.0.0.1:8212...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+Attempting a connection to the server...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Loading 2 projects from '/home/pascal/code/masters/bigdata/scalaProject3/.bloop'...
+[0m[32m[D][0m Loading project from '/home/pascal/code/masters/bigdata/scalaProject3/.bloop/scalaproject3-test.json'
+[0m[32m[D][0m Loading project from '/home/pascal/code/masters/bigdata/scalaProject3/.bloop/scalaproject3.json'
+[0m[32m[D][0m Cache miss for scala instance org.scala-lang:scala-compiler:2.12.12.
+[0m[32m[D][0m   => /home/pascal/.cache/coursier/v1/https/repo1.maven.org/maven2/jline/jline/2.14.6/jline-2.14.6.jar
+[0m[32m[D][0m   => /home/pascal/.cache/coursier/v1/https/repo1.maven.org/maven2/org/fusesource/jansi/jansi/1.12/jansi-1.12.jar
+[0m[32m[D][0m   => /home/pascal/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar
+[0m[32m[D][0m   => /home/pascal/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.12/scala-compiler-2.12.12.jar
+[0m[32m[D][0m   => /home/pascal/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.12/scala-library-2.12.12.jar
+[0m[32m[D][0m   => /home/pascal/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.12/scala-reflect-2.12.12.jar
+[0m[32m[D][0m Configured SemanticDB in projects 'scalaproject3-test', 'scalaproject3'
+[0m[32m[D][0m Missing analysis file for project 'scalaproject3-test'
+[0m[32m[D][0m Loading previous analysis for 'scalaproject3' from '/home/pascal/code/masters/bigdata/scalaProject3/target/streams/compile/bloopAnalysisOut/_global/streams/inc_compile_2.12.zip'.
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher859538667937674611/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher859538667937674611/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.29 17:12:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pascal/.cache/metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher18116635486451896832/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher18116635486451896832/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher18116635486451896832/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.29 17:12:33 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pascal/.cache/metals/bsp.trace.json
+2020.10.29 17:12:33 INFO  time: connected to build server in 3.26s
+2020.10.29 17:12:33 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.29 17:12:33 INFO  time: imported build in 0.14s
+2020.10.29 17:12:35 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.10.29 17:12:35 INFO  time: indexed workspace in 2.08s
+Oct 29, 2020 5:12:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3
+Oct 29, 2020 5:12:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4
+Oct 29, 2020 5:13:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:42)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.pc.VirtualFileParams.checkCanceled(VirtualFileParams.java:25)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:77)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.toStream(Iterator.scala:1417)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1416)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1431)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1417)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1173)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1163)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	... 8 more
+
+Oct 29, 2020 5:13:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5
+Oct 29, 2020 5:14:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10
+Oct 29, 2020 5:14:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 24
+Oct 29, 2020 5:14:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 28
+Oct 29, 2020 5:14:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 32
+Oct 29, 2020 5:14:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 44
+Oct 29, 2020 5:14:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 54
+Oct 29, 2020 5:15:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 69
+Oct 29, 2020 5:15:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 72
+Oct 29, 2020 5:15:47 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 29, 2020 5:15:47 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 29, 2020 5:15:48 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 29, 2020 5:15:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 56
+2020.10.29 17:16:45 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:16:46 INFO  time: compiled scalaproject3 in 1.88s
+Oct 29, 2020 5:16:53 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 29, 2020 5:16:54 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 29, 2020 5:16:54 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 29, 2020 5:16:54 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 29, 2020 5:16:54 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:500)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 29, 2020 5:16:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 77
+2020.10.29 17:17:03 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:17:03 INFO  time: compiled scalaproject3 in 0.17s
+2020.10.29 17:18:05 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:18:05 INFO  time: compiled scalaproject3 in 0.12s
+2020.10.29 17:18:48 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:18:48 INFO  time: compiled scalaproject3 in 0.13s
+2020.10.29 17:19:15 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:19:15 INFO  time: compiled scalaproject3 in 95ms
+2020.10.29 17:19:23 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:19:23 INFO  time: compiled scalaproject3 in 83ms
+2020.10.29 17:20:22 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:20:22 INFO  time: compiled scalaproject3 in 0.32s
+Oct 29, 2020 5:20:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 93
+Oct 29, 2020 5:20:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 158
+2020.10.29 17:20:57 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:20:57 INFO  time: compiled scalaproject3 in 78ms
+2020.10.29 17:21:21 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:21:21 INFO  time: compiled scalaproject3 in 0.23s
+2020.10.29 17:21:35 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:21:35 INFO  time: compiled scalaproject3 in 0.24s
+Oct 29, 2020 5:21:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 160
+2020.10.29 17:21:51 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:21:52 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:21:52 INFO  time: compiled scalaproject3 in 1.58s
+Oct 29, 2020 5:22:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 203
+Oct 29, 2020 5:22:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 190
+Oct 29, 2020 5:22:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 204
+Oct 29, 2020 5:22:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 205
+Oct 29, 2020 5:22:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 211
+Oct 29, 2020 5:22:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 214
+Oct 29, 2020 5:22:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 227
+Oct 29, 2020 5:22:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 239
+Oct 29, 2020 5:22:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 232
+Oct 29, 2020 5:23:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 245
+Oct 29, 2020 5:23:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 247
+Oct 29, 2020 5:23:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 249
+2020.10.29 17:23:56 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:23:56 INFO  time: compiled scalaproject3 in 83ms
+Oct 29, 2020 5:24:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 252
+Oct 29, 2020 5:24:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 263
+2020.10.29 17:24:53 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:24:53 INFO  time: compiled scalaproject3 in 79ms
+Oct 29, 2020 5:25:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 265
+2020.10.29 17:25:39 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:25:39 INFO  time: compiled scalaproject3 in 0.22s
+Oct 29, 2020 5:25:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 289
+2020.10.29 17:25:49 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:25:49 INFO  time: compiled scalaproject3 in 0.19s
+Oct 29, 2020 5:26:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 285
+Oct 29, 2020 5:26:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 301
+Oct 29, 2020 5:27:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 308
+Oct 29, 2020 5:27:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 319
+something's wrong: no file:///home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala in Array[<error>]RangePosition(file:///home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala, 2428, 2428, 2443)
+Oct 29, 2020 5:27:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 328
+something's wrong: no file:///home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala in Array[<error>]RangePosition(file:///home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala, 2434, 2434, 2449)
+Oct 29, 2020 5:27:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 335
+Oct 29, 2020 5:28:02 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:478)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 29, 2020 5:28:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 345
+Oct 29, 2020 5:28:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 371
+Oct 29, 2020 5:28:14 PM scala.meta.internal.pc.completions.Completions completionPosition
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.completions.OverrideCompletions$OverrideCompletion.<init>(OverrideCompletions.scala:46)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe(Completions.scala:478)
+	at scala.meta.internal.pc.completions.Completions.completionPositionUnsafe$(Completions.scala:409)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.completions.Completions.completionPosition(Completions.scala:401)
+	at scala.meta.internal.pc.completions.Completions.completionPosition$(Completions.scala:386)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:29)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:444)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:57)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:184)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:137)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:87)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:197)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:103)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+Oct 29, 2020 5:28:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 385
+Oct 29, 2020 5:28:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 367
+Oct 29, 2020 5:28:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 399
+Oct 29, 2020 5:28:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 386
+Oct 29, 2020 5:28:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 400
+2020.10.29 17:29:56 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:20:7: stale bloop error: not enough arguments for method Problem2: (spark: org.apache.spark.sql.SparkSession, m1: Array[Array[Integer]], m2: Array[Array[Integer]])Unit.
+Unspecified value parameters spark, m1, m2.
+      Problem2()
+      ^^^^^^^^^^
+2020.10.29 17:29:56 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:20:7: stale bloop error: not enough arguments for method Problem2: (spark: org.apache.spark.sql.SparkSession, m1: Array[Array[Integer]], m2: Array[Array[Integer]])Unit.
+Unspecified value parameters spark, m1, m2.
+      Problem2()
+      ^^^^^^^^^^
+2020.10.29 17:29:56 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:20:7: stale bloop error: not enough arguments for method Problem2: (spark: org.apache.spark.sql.SparkSession, m1: Array[Array[Integer]], m2: Array[Array[Integer]])Unit.
+Unspecified value parameters spark, m1, m2.
+      Problem2()
+      ^^^^^^^^^^
+2020.10.29 17:29:56 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:20:7: stale bloop error: not enough arguments for method Problem2: (spark: org.apache.spark.sql.SparkSession, m1: Array[Array[Integer]], m2: Array[Array[Integer]])Unit.
+Unspecified value parameters spark, m1, m2.
+      Problem2()
+      ^^^^^^^^^^
+Oct 29, 2020 5:30:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 405
+Oct 29, 2020 5:30:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 428
+Oct 29, 2020 5:30:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 443
+Oct 29, 2020 5:30:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 444
+Oct 29, 2020 5:30:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 446
+2020.10.29 17:30:55 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:30:55 INFO  time: compiled scalaproject3 in 69ms
+Oct 29, 2020 5:31:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 448
+Oct 29, 2020 5:31:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 458
+2020.10.29 17:31:16 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:31:16 INFO  time: compiled scalaproject3 in 90ms
+2020.10.29 17:31:34 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:31:34 INFO  time: compiled scalaproject3 in 0.22s
+2020.10.29 17:31:47 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:31:47 INFO  time: compiled scalaproject3 in 0.19s
+Oct 29, 2020 5:32:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 486
+Oct 29, 2020 5:32:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 466
+Oct 29, 2020 5:32:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 487
+Oct 29, 2020 5:32:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 495
+2020.10.29 17:32:23 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:32:23 INFO  time: compiled scalaproject3 in 0.17s
+Oct 29, 2020 5:32:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 491
+Oct 29, 2020 5:32:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 508
+Oct 29, 2020 5:32:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 521
+2020.10.29 17:32:54 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:32:54 INFO  time: compiled scalaproject3 in 0.19s
+Oct 29, 2020 5:33:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 523
+Oct 29, 2020 5:33:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 542
+2020.10.29 17:33:22 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:33:22 INFO  time: compiled scalaproject3 in 0.16s
+2020.10.29 17:33:53 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:33:53 INFO  time: compiled scalaproject3 in 0.17s
+Oct 29, 2020 5:34:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 547
+Oct 29, 2020 5:34:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 576
+Oct 29, 2020 5:34:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 581
+Oct 29, 2020 5:34:55 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 600
+Oct 29, 2020 5:35:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 614
+Oct 29, 2020 5:35:02 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 594
+Oct 29, 2020 5:35:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 615
+Oct 29, 2020 5:35:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 622
+Oct 29, 2020 5:35:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 633
+Oct 29, 2020 5:35:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 634
+Oct 29, 2020 5:35:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 635
+Oct 29, 2020 5:35:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 624
+Oct 29, 2020 5:35:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 636
+Oct 29, 2020 5:35:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 641
+Oct 29, 2020 5:35:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 649
+Oct 29, 2020 5:35:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 650
+Oct 29, 2020 5:35:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 651
+Oct 29, 2020 5:35:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 642
+Oct 29, 2020 5:35:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 652
+Oct 29, 2020 5:35:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 657
+Oct 29, 2020 5:35:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 660
+2020.10.29 17:35:51 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:35:51 INFO  time: compiled scalaproject3 in 0.16s
+Oct 29, 2020 5:36:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 670
+Oct 29, 2020 5:36:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 683
+Oct 29, 2020 5:36:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 687
+2020.10.29 17:36:35 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:36:35 INFO  time: compiled scalaproject3 in 0.18s
+2020.10.29 17:37:23 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:37:23 INFO  time: compiled scalaproject3 in 0.15s
+2020.10.29 17:37:42 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:37:42 INFO  time: compiled scalaproject3 in 0.16s
+Oct 29, 2020 5:37:51 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 688
+2020.10.29 17:37:55 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:37:55 INFO  time: compiled scalaproject3 in 0.16s
+Oct 29, 2020 5:39:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 732
+Oct 29, 2020 5:39:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 715
+Oct 29, 2020 5:39:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 733
+Oct 29, 2020 5:39:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 735
+Oct 29, 2020 5:41:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 754
+Oct 29, 2020 5:41:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 739
+Oct 29, 2020 5:41:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 755
+Oct 29, 2020 5:42:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 757
+Oct 29, 2020 5:42:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 762
+Oct 29, 2020 5:43:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 773
+Oct 29, 2020 5:43:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 766
+Oct 29, 2020 5:43:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 776
+2020.10.29 17:43:21 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:23:22: stale bloop error: type mismatch;
+ found   : Array[Array[Integer]]
+ required: String
+      Problem2(spark,matrix1, matrix2)
+                     ^^^^^^^
+2020.10.29 17:43:21 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:23:31: stale bloop error: type mismatch;
+ found   : Array[Array[Integer]]
+ required: String
+      Problem2(spark,matrix1, matrix2)
+                              ^^^^^^^
+2020.10.29 17:43:21 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:23:22: stale bloop error: type mismatch;
+ found   : Array[Array[Integer]]
+ required: String
+      Problem2(spark,matrix1, matrix2)
+                     ^^^^^^^
+2020.10.29 17:43:21 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:23:31: stale bloop error: type mismatch;
+ found   : Array[Array[Integer]]
+ required: String
+      Problem2(spark,matrix1, matrix2)
+                              ^^^^^^^
+2020.10.29 17:43:21 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:23:22: stale bloop error: type mismatch;
+ found   : Array[Array[Integer]]
+ required: String
+      Problem2(spark,matrix1, matrix2)
+                     ^^^^^^^
+2020.10.29 17:43:21 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:23:31: stale bloop error: type mismatch;
+ found   : Array[Array[Integer]]
+ required: String
+      Problem2(spark,matrix1, matrix2)
+                              ^^^^^^^
+2020.10.29 17:43:21 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:23:22: stale bloop error: type mismatch;
+ found   : Array[Array[Integer]]
+ required: String
+      Problem2(spark,matrix1, matrix2)
+                     ^^^^^^^
+2020.10.29 17:43:21 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:23:31: stale bloop error: type mismatch;
+ found   : Array[Array[Integer]]
+ required: String
+      Problem2(spark,matrix1, matrix2)
+                              ^^^^^^^
+Oct 29, 2020 5:43:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 778
+Oct 29, 2020 5:43:28 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 779
+2020.10.29 17:43:40 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:43:40 INFO  time: compiled scalaproject3 in 0.15s
+2020.10.29 17:44:35 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:44:35 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:44:35 INFO  time: compiled scalaproject3 in 0.86s
+Oct 29, 2020 5:46:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 782
+Oct 29, 2020 5:46:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 814
+2020.10.29 17:46:43 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:46:43 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:46:43 INFO  time: compiled scalaproject3 in 0.94s
+2020.10.29 17:47:13 INFO  started: Metals version 0.9.4 in workspace '/home/pascal/code/masters/bigdata/scalaProject3' .
+2020.10.29 17:47:14 INFO  time: initialize in 0.91s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher3319278444235818418/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.29 17:47:14 INFO  skipping build import with status 'Installed'
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher3319278444235818418/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher3319278444235818418/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.29 17:47:14 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pascal/.cache/metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher14537720776543751987/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher14537720776543751987/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher14537720776543751987/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.29 17:47:15 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pascal/.cache/metals/bsp.trace.json
+2020.10.29 17:47:15 INFO  time: connected to build server in 0.25s
+2020.10.29 17:47:15 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.29 17:47:17 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.10.29 17:47:17 INFO  time: indexed workspace in 2.7s
+2020.10.29 17:47:20 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:47:20 INFO  Deduplicating compilation of scalaproject3 from bsp client 'Metals 0.9.4' (since 34m 47.092s)
+2020.10.29 17:47:20 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:47:20 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:47:20 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:47:20 INFO  time: compiled scalaproject3 in 0.82s
+2020.10.29 17:47:20 INFO  time: compiled scalaproject3 in 0.79s
+2020.10.29 17:47:55 INFO  started: Metals version 0.9.4 in workspace '/home/pascal/code/masters/bigdata/scalaProject3' .
+2020.10.29 17:47:56 INFO  time: initialize in 1.01s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher6318301410450162197/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.29 17:47:56 INFO  skipping build import with status 'Installed'
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher6318301410450162197/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher6318301410450162197/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.29 17:47:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pascal/.cache/metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2973714787561533543/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2973714787561533543/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2973714787561533543/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.29 17:47:56 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pascal/.cache/metals/bsp.trace.json
+2020.10.29 17:47:56 INFO  time: connected to build server in 0.26s
+2020.10.29 17:47:56 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.29 17:47:59 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.10.29 17:47:59 INFO  time: indexed workspace in 2.77s
+2020.10.29 17:48:18 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:48:18 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:48:18 INFO  time: compiled scalaproject3 in 0.69s
+2020.10.29 17:48:44 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:48:44 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:48:44 INFO  time: compiled scalaproject3 in 0.68s
+2020.10.29 17:49:50 INFO  started: Metals version 0.9.4 in workspace '/home/pascal/code/masters/bigdata/scalaProject3' .
+2020.10.29 17:49:51 INFO  time: initialize in 0.93s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher5528721816614533677/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.29 17:49:52 INFO  skipping build import with status 'Installed'
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher5528721816614533677/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher5528721816614533677/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.29 17:49:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pascal/.cache/metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher2009613776623477750/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher2009613776623477750/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher2009613776623477750/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.29 17:49:52 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pascal/.cache/metals/bsp.trace.json
+2020.10.29 17:49:52 INFO  time: connected to build server in 0.28s
+2020.10.29 17:49:52 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.29 17:49:54 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.10.29 17:49:54 INFO  time: indexed workspace in 2.92s
+Oct 29, 2020 5:50:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 816
+2020.10.29 17:50:48 INFO  Deduplicating compilation of scalaproject3 from bsp client 'Metals 0.9.4' (since 38m 15.204s)
+2020.10.29 17:50:48 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:50:48 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:50:48 INFO  time: compiled scalaproject3 in 0.31s
+2020.10.29 17:50:48 INFO  time: compiled scalaproject3 in 0.37s
+2020.10.29 17:58:08 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:90:5: stale bloop error: value write is not a member of Array[org.apache.spark.sql.Row]
+    groupBy.collect().write.option("header","true").csv("data/results/matrix3.csv")
+    ^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.29 17:58:08 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:90:5: stale bloop error: value write is not a member of Array[org.apache.spark.sql.Row]
+    groupBy.collect().write.option("header","true").csv("data/results/matrix3.csv")
+    ^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.29 17:58:08 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:90:5: stale bloop error: value write is not a member of Array[org.apache.spark.sql.Row]
+    groupBy.collect().write.option("header","true").csv("data/results/matrix3.csv")
+    ^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.29 17:58:08 INFO  /home/pascal/code/masters/bigdata/scalaProject3/src/main/scala/App.scala:90:5: stale bloop error: value write is not a member of Array[org.apache.spark.sql.Row]
+    groupBy.collect().write.option("header","true").csv("data/results/matrix3.csv")
+    ^^^^^^^^^^^^^^^^^^^^^^^
+2020.10.29 17:58:41 INFO  Deduplicating compilation of scalaproject3 from bsp client 'Metals 0.9.4' (since 8m 49.319s)
+2020.10.29 17:58:41 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:58:41 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:58:41 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:58:41 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:58:41 INFO  time: compiled scalaproject3 in 0.68s
+2020.10.29 17:58:41 INFO  time: compiled scalaproject3 in 0.69s
+Oct 29, 2020 5:58:57 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.lang.InterruptedException
+java.util.concurrent.CompletionException: java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:314)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:319)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:506)
+	at java.base/java.util.concurrent.CompletableFuture.complete(CompletableFuture.java:2073)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:42)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.lang.InterruptedException
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:29)
+	at scala.meta.pc.VirtualFileParams.checkCanceled(VirtualFileParams.java:25)
+	at scala.meta.internal.pc.CompletionProvider.$anonfun$completions$1(CompletionProvider.scala:77)
+	at scala.collection.Iterator$$anon$10.next(Iterator.scala:461)
+	at scala.collection.Iterator.toStream(Iterator.scala:1417)
+	at scala.collection.Iterator.toStream$(Iterator.scala:1416)
+	at scala.collection.AbstractIterator.toStream(Iterator.scala:1431)
+	at scala.collection.Iterator.$anonfun$toStream$1(Iterator.scala:1417)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1173)
+	at scala.collection.immutable.Stream$Cons.tail(Stream.scala:1163)
+	at scala.collection.immutable.StreamIterator.$anonfun$next$1(Stream.scala:1061)
+	at scala.collection.immutable.StreamIterator$LazyCell.v$lzycompute(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator$LazyCell.v(Stream.scala:1050)
+	at scala.collection.immutable.StreamIterator.hasNext(Stream.scala:1055)
+	at scala.collection.convert.Wrappers$IteratorWrapper.hasNext(Wrappers.scala:31)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:134)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.CollectionTypeAdapter.write(CollectionTypeAdapter.java:40)
+	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.write(TypeAdapterRuntimeTypeWrapper.java:69)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.write(ReflectiveTypeAdapterFactory.java:125)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.write(ReflectiveTypeAdapterFactory.java:243)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:423)
+	at org.eclipse.lsp4j.jsonrpc.json.adapters.MessageTypeAdapter.write(MessageTypeAdapter.java:55)
+	at com.google.gson.Gson.toJson(Gson.java:669)
+	at com.google.gson.Gson.toJson(Gson.java:648)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:145)
+	at org.eclipse.lsp4j.jsonrpc.json.MessageJsonHandler.serialize(MessageJsonHandler.java:140)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:59)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.lambda$handleRequest$1(RemoteEndpoint.java:281)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:714)
+	... 8 more
+
+Oct 29, 2020 5:58:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 833
+2020.10.29 17:59:00 INFO  Deduplicating compilation of scalaproject3 from bsp client 'Metals 0.9.4' (since 9m 8.514s)
+2020.10.29 17:59:00 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:59:00 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 17:59:00 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:59:00 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 17:59:00 INFO  time: compiled scalaproject3 in 0.63s
+2020.10.29 17:59:00 INFO  time: compiled scalaproject3 in 0.64s
+Oct 29, 2020 6:00:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 843
+Oct 29, 2020 6:00:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 853
+Oct 29, 2020 6:00:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 846
+Oct 29, 2020 6:00:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 858
+Oct 29, 2020 6:00:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 854
+2020.10.29 18:00:51 INFO  Deduplicating compilation of scalaproject3 from bsp client 'Metals 0.9.4' (since 10m 59.388s)
+2020.10.29 18:00:51 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 18:00:51 INFO  compiling scalaproject3 (1 scala source)
+2020.10.29 18:00:51 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 18:00:51 WARN  there was one deprecation warning (since 2.11.0); re-run with -deprecation for details
+2020.10.29 18:00:51 INFO  time: compiled scalaproject3 in 0.69s
+2020.10.29 18:00:51 INFO  time: compiled scalaproject3 in 0.69s
+2020.10.29 18:01:57 INFO  started: Metals version 0.9.4 in workspace '/home/pascal/code/masters/bigdata/scalaProject3' .
+2020.10.29 18:01:58 INFO  time: initialize in 0.92s
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher1990991573956099993/bsp.socket'...
+Waiting for the bsp connection to come up...
+2020.10.29 18:01:59 INFO  skipping build import with status 'Installed'
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher1990991573956099993/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher1990991573956099993/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.29 18:01:58 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pascal/.cache/metals/bsp.trace.json
+Starting the bsp launcher for bloop...
+Opening a bsp server connection with 'bsp --protocol local --socket /tmp/bsp-launcher16919458253934631954/bsp.socket'...
+Waiting for the bsp connection to come up...
+[0m[32m[D][0m Loading workspace settings from bloop.settings.json
+[0m[32m[D][0m Waiting for a connection at local:///tmp/bsp-launcher16919458253934631954/bsp.socket...
+The server is listening for incoming connections at local:///tmp/bsp-launcher16919458253934631954/bsp.socket...
+Starting thread that pumps stdin and redirects it to the bsp server...
+Starting thread that pumps server stdout and redirects it to the client stdout...
+2020.10.29 18:01:59 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /home/pascal/.cache/metals/bsp.trace.json
+2020.10.29 18:01:59 INFO  time: connected to build server in 0.26s
+2020.10.29 18:01:59 INFO  Connected to Build server v1.4.4-13-408f4d80
+2020.10.29 18:02:01 WARN  Could not find java sources in None. Java symbols will not be available.
+2020.10.29 18:02:01 INFO  time: indexed workspace in 2.76s

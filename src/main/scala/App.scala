@@ -6,6 +6,9 @@ import org.apache.spark.sql.types.FloatType
 import org.apache.spark.sql.types.IntegerType
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
 import org.apache.spark.sql.SaveMode
+import java.io.BufferedWriter
+import java.io.FileWriter
+import java.io.File
 object main extends App{
   Console.println("Testing scala");
 
@@ -14,7 +17,11 @@ object main extends App{
         .master("local")
         .appName("Problem1")
         .getOrCreate()
-      Problem1(spark)
+      //Problem1(spark)
+      val matrix1 = MatrixGenerator(500,500,"data/matrix1.csv")
+      val matrix2 = MatrixGenerator(500,500,"data/matrix2.csv")
+      Problem4(spark,"data/matrix1.csv", "data/matrix2.csv")
+
   }
   // Transcations: transid, custid,total,numitems
   def Problem1(spark: SparkSession): Unit = {
@@ -49,13 +56,56 @@ object main extends App{
 
       val t6 = t5.join(t3, Seq("custid"),"inner").filter("t3count<t5count*5")
       //val t6 = t5.filter(t5("count(custid)")*5<=t3("count(custid)"))
-      t1.write.option("header","true").csv("data/results/t1.csv")
-      t2.write.option("header","true").csv("data/results/t2.csv")
-      t3.write.option("header","true").csv("data/results/t3.csv")
-      t4.write.option("header","true").csv("data/results/t4.csv")
-      t5.write.option("header","true").csv("data/results/t5.csv")
-      t6.write.option("header","true").csv("data/results/t6.csv")
+      t1.repartition(1).write.option("header","true").csv("data/results/t1.csv")
+      t6.repartition(1).write.option("header","true").csv("data/results/t6.csv")
       sc.stop()
+  }
+
+
+  // Each matrix is a csv
+  // i,j, value
+  def Problem4(spark: SparkSession, m1path: String, m2path: String ): Unit = {
+    val sc = spark.sparkContext
+    val schema = new StructType()
+                      .add("i",IntegerType,true)
+                      .add("j",IntegerType,true)
+                      .add("n",IntegerType,true)
+    val schema2 = new StructType()
+                      .add("j",IntegerType,true)
+                      .add("k",IntegerType,true)
+                      .add("m",IntegerType,true)
+    val m1 = spark.read.schema(schema).csv("data/matrix1.csv")
+    val m2 = spark.read.schema(schema2).csv("data/matrix2.csv")
+
+    val join = m1.join(m2, Seq("j"),"inner")
+    val reduce = join.withColumn("v",expr("m*n"))
+    val groupBy = reduce.groupBy("i","k").agg(
+      sum("v")
+    )
+
+    groupBy.repartition(1).write.option("header","true").csv("data/results/matrix3.csv")
+    sc.stop();
+  }
+
+
+  def writeMatrix(matrix: Array[Array[Integer]], filepath: String): Unit = {
+    val file = new java.io.File(filepath)
+    val bw = new BufferedWriter(new FileWriter(file))
+    for(i <- 0 to (matrix.length-1); j <- 0 to (matrix(i).length-1)){
+      val line = i + ","+j+","+matrix(i)(j)+"\n"
+      bw.write(line)
+    }
+    bw.close()
+  }
+
+  def MatrixGenerator(height: Integer, width: Integer, filepath: String): Array[Array[Integer]] = {
+      var matrix = Array.ofDim[Integer](width,height)
+      val r = scala.util.Random
+      for(i <- 0 to width-1; j <- 0 to height-1){
+          matrix(i)(j) = r.nextInt(100)
+      }
+      writeMatrix(matrix,filepath)
+      matrix
   }
 }
 
