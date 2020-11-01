@@ -2,3 +2,5 @@
 .bloop
 project
 .oldCode
+temp
+data/results

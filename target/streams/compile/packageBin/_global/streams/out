@@ -1,11 +1,1 @@
-[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/pascal/code/masters/bigdata/scalaProject3/target/scala-2.12/project3_2.12-1.0.jar ...[0m
-[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/pascal/code/masters/bigdata/scalaProject3/target/scala-2.12/classes/scala[0m
-[0m[[0m[0mdebug[0m] [0m[0m	scala/main$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/pascal/code/masters/bigdata/scalaProject3/target/scala-2.12/classes/scala/main$delayedInit$body.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	scala/main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/pascal/code/masters/bigdata/scalaProject3/target/scala-2.12/classes/scala/main$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	scala/main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/pascal/code/masters/bigdata/scalaProject3/target/scala-2.12/classes/scala/main.class[0m
-[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m
+[0m[[0m[0mdebug[0m] [0m[0mJar uptodate: /home/pascal/code/masters/bigdata/scalaProject3/target/scala-2.12/project3_2.12-1.0.jar[0m
