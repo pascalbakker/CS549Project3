@@ -1,0 +1,3 @@
+javac DataGenerator.java
+java DataGenerator
+
