@@ -33,8 +33,8 @@ val r1 = r.groupBy("C1").agg(expr("sum(n) as neighbors"))
 // Join points per cell with data of neighbors
 val j1 = c.join(r1, c("Cell") === r1("C1"))
 // Calculate the number of cells next to each cell to get the average
-val j2 = j1.withColumn("Space", when($"Cell" === 1 or $"Cell" === 500 or $"Cell" === 249501 or $"Cell" === 250000, 3).otherwise(when($"Cell"%500 === 0 or ($"Cell"-1)%500 === 0 or $"Cell" < 501 or $"Cell" > 249500, 5).otherwise(8))).select("Cell","n","neighbors", "Space")
- 
+val j2 = j1.withColumn("Space", when(col("Cell") === 1 or col("Cell") === 500 or col("Cell") === 249501 or col("Cell") === 250000, 3).otherwise(when(col("Cell")%500 === 0 or (col("Cell")-1)%500 === 0 or col("Cell") < 501 or col("Cell") > 249500, 5).otherwise(8))).select("Cell","n","neighbors", "Space")
+
 // Calculate index and print result in console
 val j3 = j2.withColumn("I", (col("n")*col("Space"))/col("neighbors")).sort(col("I").desc)
 val j4 = j3.select("Cell","I").limit(50)
