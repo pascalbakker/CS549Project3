@@ -29,3 +29,4 @@ val r2 = r1.groupBy("country", "gender").agg(count("gender"))
 
 // Print output
 r2.show()
+r2.repartition(1).write.option("header","true").csv("data/results/r2.csv")
